@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(248, 94, 94);
+    flex-direction: row-reverse;
+}
+body {
+    border-color: white;
+}
+hr {
+    margin: 5px;
+    width: 37px;
+    color: black;
+    padding: 0;
+    height: 5px;
+    background-color: black;
+    border: 0;
+    border-radius: 3px;
+}
+#menuIcon {
+    width: fit-content;
+    margin: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+#b1 {
+    animation-name: menu1;
+}
+input#menu {
+    &:checked {
+        & ~ div#menuIcon {
+            & #b1 {
+                transform: rotateZ(-45deg);
+                transform-origin: right;
+                margin-bottom: 8px;
+                margin-top: 2px;
+            }
+            & #b2 {
+                margin: 8px;
+                visibility: hidden;
+            }
+            & #b3 {
+                margin-top: 8px;
+                margin-bottom: 2px;
+                transform: rotateZ(45deg);
+                transform-origin: right;
+            }
+        }
+    }
+}
+
+// @keyframes menu1 {
+//     from {
+//     }
+//     to {
+//     }
+// }
+// @keyframes menu2 {
+//     0% {
+//     }
+//     100% {
+//         margin: 8px;
+//         visibility: hidden;
+//     }
+// }
+// @keyframes menu3 {
+//     0% {
+//     }
+//     100% {
+//         margin-top: 8px;
+//         margin-bottom: 2px;
+//         transform: rotateZ(45deg);
+//         transform-origin: right;
+//     }
+// }

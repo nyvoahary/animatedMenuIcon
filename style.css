@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #f85e5e;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+body {
+  border-color: white;
+}
+
+hr {
+  margin: 5px;
+  width: 37px;
+  color: black;
+  padding: 0;
+  height: 5px;
+  background-color: black;
+  border: 0;
+  border-radius: 3px;
+}
+
+#menuIcon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+#menuIcon:hover {
+  cursor: pointer;
+}
+
+#b1 {
+  -webkit-animation-name: menu1;
+          animation-name: menu1;
+}
+
+input#menu:checked ~ div#menuIcon #b1 {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  margin-bottom: 8px;
+  margin-top: 2px;
+}
+
+input#menu:checked ~ div#menuIcon #b2 {
+  margin: 8px;
+  visibility: hidden;
+}
+
+input#menu:checked ~ div#menuIcon #b3 {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+/*# sourceMappingURL=style.css.map */
